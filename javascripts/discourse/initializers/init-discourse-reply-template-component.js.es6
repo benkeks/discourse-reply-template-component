@@ -172,7 +172,8 @@ function openComposerWithTemplateAndAction(controller, post, wrap) {
         draftKey: controller.topicModel.draft_key,
         draftSequence: controller.topicModel.draftSequence,
         skipDraftCheck: true,
-        categoryId: dataset.categoryId || null
+        categoryId: dataset.categoryId || null,
+        recipients: dataset.recipients || null
       };
 
       switch (dataset.action) {
